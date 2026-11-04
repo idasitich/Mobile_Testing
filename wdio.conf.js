@@ -1,3 +1,4 @@
+process.env.APPIUM_HOME = `${process.env.HOME}/.appium`;
 export const config = {
     runner: 'local',
     port: 4723,
@@ -8,7 +9,7 @@ export const config = {
     exclude: [
         // 'path/to/excluded/files'
     ],
-    maxInstances: 10,
+    maxInstances: 1,
     capabilities: [{
         platformName: 'Android',
         'appium:deviceName': 'emulator-5554',
