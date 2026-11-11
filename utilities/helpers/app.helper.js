@@ -1,4 +1,4 @@
-class AppHelper {
+    class AppHelper {
     async launch() {
         await driver.launchApp();
     }
@@ -12,4 +12,4 @@ class AppHelper {
     }
 }
 
-module.exports = new AppHelper();
+export default new AppHelper();
